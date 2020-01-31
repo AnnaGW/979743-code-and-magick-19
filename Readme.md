@@ -1,7 +1,7 @@
 # Учебный проект «Код и Магия» [![Build status][travis-image]][travis-url]
 
 * Студент: [Анна Богословская](https://up.htmlacademy.ru/javascript/19/user/979743).
-* Наставник: `Павел Белик https://htmlacademy.ru/profile/id84572`.
+* Наставник: [Павел Белик] (https://htmlacademy.ru/profile/id84572).
 
 ---
 
