@@ -56,12 +56,12 @@ window.renderStatistics = function (ctx, names, times) {
   var coefficient = GISTOGRAM_HEIGHT / maxTime;
 
   var barColors = ['rgba(255, 0, 0, 1)'];
-  for (var i = 1; i < names.length; i++) {
+  for (i = 1; i < names.length; i++) {
     var saturation = 'hsl(240, ' + Math.random() * 100 + '%, 50%)';
     barColors.push(saturation);
   }
 
-  for (var i = 0; i < times.length; i++) {
+  for (i = 0; i < times.length; i++) {
     ctx.fillStyle = barColors[i];
     ctx.fillRect(CLOUD_X + gistogramGap + nameWidth * i, GISTOGRAM_Y + (150 - Math.round(times[i] * coefficient)), BAR_WIDTH, Math.round(times[i] * coefficient));
     ctx.fillStyle = '#000';
