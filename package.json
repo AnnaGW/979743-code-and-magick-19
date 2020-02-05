@@ -28,7 +28,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged"
+      "pre-commit": "prettier --single-quote --trailing-comma es5 --write \"js/**/*.js\""
     }
   },
   "scripts": {
