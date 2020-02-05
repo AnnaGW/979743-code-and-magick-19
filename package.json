@@ -32,6 +32,6 @@
     }
   },
   "scripts": {
-    "prettier": "prettier --single-quote --trailing-comma es5 --write "
+    "prettier": "prettier --single-quote --trailing-comma es5 --write \"js/**/*.js\""
   }
 }
