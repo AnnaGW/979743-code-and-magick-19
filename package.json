@@ -30,5 +30,8 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
+  },
+  "scripts": {
+    "prettier": "prettier --single-quote --trailing-comma es5 --write "
   }
 }
