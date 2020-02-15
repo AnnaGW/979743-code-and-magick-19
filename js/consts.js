@@ -1,6 +1,6 @@
 'use strict';
 
-(function () {
+(function() {
   var ESC_KEY = 'Escape';
   var ENTER_KEY = 'Enter';
 
@@ -45,7 +45,7 @@
     SURNAMES: SURNAMES,
     COAT_COLORS: COAT_COLORS,
     EYES_COLORS: EYES_COLORS,
-    FIREBALL_COLORS: FIREBALL_COLORS
+    FIREBALL_COLORS: FIREBALL_COLORS,
   };
   // onsole.log(window.consts);
 })();

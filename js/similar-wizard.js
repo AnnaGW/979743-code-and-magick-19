@@ -1,11 +1,12 @@
 'use strict';
 
-(function () {
+(function() {
   var setupConteiner = document.querySelector('.setup-similar-list');
-  var wizardTemplate = document.querySelector('#similar-wizard-template').content;
+  var wizardTemplate = document.querySelector('#similar-wizard-template')
+    .content;
   var newWizardTemplate = wizardTemplate.querySelector('.setup-similar-item');
 
-  var createNewWizard = function (wizardData) {
+  var createNewWizard = function(wizardData) {
     var newWizard = newWizardTemplate.cloneNode(true);
     var newWizardName = newWizard.querySelector('.setup-similar-label');
     newWizardName.textContent = wizardData.name;
@@ -21,5 +22,4 @@
 
   var setupSimilar = document.querySelector('.setup-similar');
   setupSimilar.classList.remove('hidden');
-
 })();
