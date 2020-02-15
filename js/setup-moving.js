@@ -1,17 +1,17 @@
 'use strict';
 // --------- open/close popup setup-----
-(function() {
+(function () {
   var setup = document.querySelector('.setup');
   var upload = setup.querySelector('.upload');
   var isDragged = false;
 
-  upload.addEventListener('mousedown', function(evt) {
+  upload.addEventListener('mousedown', function (evt) {
     evt.preventDefault();
     var startCoords = {
       x: evt.clientX,
       y: evt.clientY,
     };
-    var onMouseMove = function(moveEvt) {
+    var onMouseMove = function (moveEvt) {
       moveEvt.preventDefault();
       isDragged = true;
 
@@ -28,14 +28,14 @@
       setup.style.top = setup.offsetTop - shift.y + 'px';
       setup.style.left = setup.offsetLeft - shift.x + 'px';
     };
-    var onMouseUp = function(upEvt) {
+    var onMouseUp = function (upEvt) {
       upEvt.preventDefault();
 
       document.removeEventListener('mousemove', onMouseMove);
       document.removeEventListener('mouseup', onMouseUp);
 
       if (isDragged) {
-        var onClickPreventDefault = function(clickEvt) {
+        var onClickPreventDefault = function (clickEvt) {
           clickEvt.preventDefault();
           upload.removeEventListener('click', onClickPreventDefault);
         };

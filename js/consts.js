@@ -1,6 +1,6 @@
 'use strict';
 
-(function() {
+(function () {
   var ESC_KEY = 'Escape';
   var ENTER_KEY = 'Enter';
 
