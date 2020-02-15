@@ -4,7 +4,7 @@
   var setupWizardForm = document.querySelector('.setup-wizard-form');
   var userNameInput = setupWizardForm.querySelector('.setup-user-name');
 
-  userNameInput.addEventListener('invalid', function (evt) {
+  userNameInput.addEventListener('invalid', function () {
     if (userNameInput.validity.tooShort) {
       userNameInput.setCustomValidity(
           'Имя должно состоять не менее, чем из 2-х символов'

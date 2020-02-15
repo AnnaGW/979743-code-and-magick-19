@@ -12,24 +12,14 @@
   },
   "devDependencies": {
     "eslint": "6.3.0",
-    "eslint-config-htmlacademy": "0.5.2",
-    "eslint-config-prettier": "^6.10.0",
-    "husky": "^4.2.1",
-    "prettier": "1.19.1",
-    "pretty-quick": "^2.0.1"
+    "eslint-config-htmlacademy": "0.5.2"
   },
   "license": "MIT",
   "dependencies": {},
   "scripts": {
-    "prettier": "prettier --single-quote --trailing-comma es5 --write \"js/**/*.js\"",
     "test": "eslint js/"
   },
   "engines": {
     "node": "8.11"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "prettier --single-quote --trailing-comma es5 --write \"js/**/*.js\""
-    }
   }
 }
