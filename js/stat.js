@@ -16,12 +16,12 @@ var nameWidth = BAR_WIDTH + BAR_GAP;
 var gistogramWidth = BAR_WIDTH * 4 + BAR_GAP * 3;
 var gistogramGap = (CLOUD_WIDTH - gistogramWidth) / 2;
 
-var renderCloud = function(ctx, x, y, color) {
+var renderCloud = function (ctx, x, y, color) {
   ctx.fillStyle = color;
   ctx.fillRect(x, y, CLOUD_WIDTH, CLOUD_HEIGHT);
 };
 
-var findMax = function(array) {
+var findMax = function (array) {
   var maxInArray = array[0];
   for (var i = 1; i < array.length; i++) {
     if (array[i] > maxInArray) {
@@ -31,7 +31,7 @@ var findMax = function(array) {
   return maxInArray;
 };
 
-window.renderStatistics = function(ctx, names, times) {
+window.renderStatistics = function (ctx, names, times) {
   renderCloud(ctx, CLOUD_X + GAP, CLOUD_Y + GAP, 'rgba(0, 0, 0, 0.7)');
   renderCloud(ctx, CLOUD_X, CLOUD_Y, '#fff');
 

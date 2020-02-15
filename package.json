@@ -21,6 +21,7 @@
   "license": "MIT",
   "dependencies": {},
   "scripts": {
+    "prettier": "prettier --single-quote --trailing-comma es5 --write \"js/**/*.js\"",
     "test": "eslint js/"
   },
   "engines": {
@@ -30,8 +31,5 @@
     "hooks": {
       "pre-commit": "prettier --single-quote --trailing-comma es5 --write \"js/**/*.js\""
     }
-  },
-  "scripts": {
-    "prettier": "prettier --single-quote --trailing-comma es5 --write \"js/**/*.js\""
   }
 }
