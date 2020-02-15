@@ -17,7 +17,8 @@
   };
 
   for (var i = 1; i <= window.consts.OBJECTS_QUANTITY; i++) {
-    createNewWizard(window.creationData.data[i - 1]);
+    var data = window.creationData.get();
+    createNewWizard(data[i - 1]);
   }
 
   var setupSimilar = document.querySelector('.setup-similar');
